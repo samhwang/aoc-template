@@ -7,7 +7,7 @@ function scaffoldAOCFolder(year: string, day: string, outputDir: string, title: 
   const README_TEMPLATE = `[${title}](https://adventofcode.com/${year}/day/${day} "${title}")
 
 \`\`\`shell
-npx vite-node task.ts
+npx tsx task.ts
 \`\`\`
 `;
   const readmePath = path.join(outputDir, 'README.md');
